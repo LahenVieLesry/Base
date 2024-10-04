@@ -1,0 +1,93 @@
+GPU_num: '1'
+path:
+  benign_train_wavpath: './datasets/speech_commands/train/'
+  benign_test_wavpath: './datasets/speech_commands/test/'
+  benign_train_npypath: './datasets/train/'
+  benign_test_npypath: './datasets/test/'
+  poison_train_path: './datasets/train_trigger/'
+  poison_test_path: './datasets/temp/test_wav_layer4/'
+librosa:
+  sr: 22050
+  hop_length: 256
+  win_length: 1024
+  n_fft: 1024
+  n_mels: 80
+train:
+  batch_size: 128
+  num_workers: 64
+  epochs: 200
+  lr: 0.02
+  step_rate: 0.9
+  ir_iter_epoch: 5
+  weight_decay: 0.0005
+  momentum: 0.9
+  start_early_stopping: 15
+  patience: 6
+  verbose: True
+  optim: 'Adam'
+  model_name: 'resnet34'
+  resume: False
+  resume_model_name: 'Finetune_cnn.pth'
+  id: '0'
+trigger_gen:
+  folder_name: '_wav_layer4'
+  trigger_pattern: 'adaptive'
+  comp_method: 'wav'
+  find_closest_tensor: 'cos'
+  model_name: 'resnet18'
+  adv_model_id: '4'
+  select_boundary_samples: True
+  epsilon: 0.12
+  poison_proportion: 0.7
+  target_label: 'left'
+  # timbre_type: 236
+  max_sample: 1056
+  n_steps: 5
+  # extend: 150
+  # duration: 20
+  reset_trigger_test: True
+  bit_depth: 8
+  wavedec_factor: 0.01
+  spe_comp_factor: 80
+  iter_num: 200
+  c1: 2.5
+  c2: 1
+  mask_lr: 0.0002
+  mask_up: 0.9
+  mask_down: 0.2
+  predef_att_loss: 1
+  att_loss_drop: 0.005
+  l2_loss_drop: 0.005
+trigger_train:
+  batch_size: 128
+  num_workers: 64
+  epochs: 200
+  lr: 0.02
+  step_rate: 0.9
+  ir_iter_epoch: 5
+  momentum: 0.9
+  patience: 10
+  verbose: True
+  optim: 'Adam'
+  model_name: 'resnet34'
+  resume: 'False'
+  resume_model_name: ''
+  id: '5'
+defense:
+  pruning:
+    prune_p: 0.2
+    prune_rate: 0.9
+    prune_layer: 'layer2'
+  fine_tuning:
+    fine_tuning_p: 0.2
+    finetuning_epoch: 20
+  ABL:
+    ABL_p: 0.05
+    pre_epoch: 20
+    clean_epoch: 70
+    unlearn_epoch: 5
+    gamma: 1
+  IBD_PSC:
+    n: 9
+    xi: 1.0
+    T: 1.0

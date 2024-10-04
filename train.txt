@@ -1,0 +1,12 @@
+resnet18_epochs_50_batchsize_128_Adam_lr_0.01_mom_0.9.pth------95.364% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_0.pth------95.169% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_1.pth------88.703% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_2.pth------83.522% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_1.pth------88.703% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_0.pth------95.169% 
+./models/train/resnet34_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_3.pth------92.481% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.001_mom_0.9_id_3.pth------86.171% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.001_mom_0.9_id_4.pth------88.051% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.001_mom_0.9_id_1.pth------90.402% 
+./models/train/resnet18_epochs_200_batchsize_128_Adam_lr_0.02_mom_0.9_id_0.pth------94.819% 
+./models/train/resnet34_epochs_200_batchsize_128_Adam_lr_0.02_mom_0.9_id_0.pth------95.598% 

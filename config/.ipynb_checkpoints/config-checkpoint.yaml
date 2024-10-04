@@ -1,0 +1,54 @@
+GPU_num: '1'
+path:
+  benign_train_wavpath: './datasets/speech_commands/train/'
+  benign_test_wavpath: './datasets/speech_commands/test/'
+  benign_train_npypath: './datasets/train/'
+  benign_test_npypath: './datasets/test/'
+  poison_train_path: './datasets/trigger_train/'
+  poison_test_path: './datasets/trigger_test/'
+librosa:
+  sr: 22050
+  hop_length: 256
+  win_length: 1024
+  n_fft: 1024
+  n_mels: 80
+train:
+  batch_size: 64
+  num_workers: 8
+  epochs: 50
+  lr: 0.01
+  momentum: 0.9
+  optim: 'Adam'
+  model_name: 'resnet18'
+  resume: False
+  resume_model_name: 'Finetune_cnn.pth'
+  id: '0'
+trigger_gen:
+  poison_proportion: 0.5
+  target_label: 'left'
+  trigger_pattern: 'adaptive'
+  # train_trigger_pattern: 'adaptive'
+  # test_trigger_pattern: 'random'
+  bit_depth: 12
+  timbre_type: 236
+  max_sample: 800
+  n_steps: 5
+  extend: 150
+  duration: 20
+  reset_trigger_test: True
+  adv_model_id: '0'
+  c1: 45
+  c2: 1
+trigger_train:
+  batch_size: 64
+  num_workers: 8
+  epochs: 50
+  lr: 0.01
+  momentum: 0.9
+  patience: 5
+  verbose: True
+  optim: 'Adam'
+  model_name: 'resnet18'
+  resume: 'False'
+  resume_model_name: ''
+  id: '2'

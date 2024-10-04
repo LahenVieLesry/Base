@@ -1,0 +1,397 @@
+benign train:
+resnet18_epochs_50_batchsize_128_Adam_lr_0.01_mom_0.9.pth------95.364% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_0.pth------95.169% 
+./models/train/resnet18_epochs_50_batchsize_64_Adam_lr_0.01_mom_0.9_id_0.pth------95.169% 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_bit_c125/
+./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth------poison sample number:1056 trigger_pattern:adaptive ACC: 93.928% 
+Time: 2024-09-11 19:16:30
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_bit_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+Poison Rate: 623 / 21126 = 2.949%
+trigger_pattern: adaptive
+ASR: 96.032%
+Time: 2024-09-11 19:17:12
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+Poison Rate: 623 / 21126 = 2.949%
+trigger_pattern: adaptive
+ASR: 95.783%
+Time: 2024-09-11 19:17:40
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+Poison Rate: 623 / 21126 = 2.949%
+trigger_pattern: adaptive
+ASR: 96.029%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_bit/
+./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth------poison sample number:1056 trigger_pattern:adaptive ACC: 91.087% 
+Time: 2024-09-11 19:26:11
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+Poison Rate: 560 / 21126 = 2.651%
+trigger_pattern: adaptive
+ASR: 98.622%
+Time: 2024-09-11 19:26:28
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_bit_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+Poison Rate: 560 / 21126 = 2.651%
+trigger_pattern: adaptive
+ASR: 98.623%
+Time: 2024-09-11 19:26:54
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+Poison Rate: 560 / 21126 = 2.651%
+trigger_pattern: adaptive
+ASR: 97.391%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-11 19:26:11,407 - INFO - Time: 2024-09-11 19:26:11
+2024-09-11 19:26:11,408 - INFO - folder_name: _wav_c125
+2024-09-11 19:26:11,409 - INFO - poison_test_path: ./datasets/temp/test_bit/
+2024-09-11 19:26:11,409 - INFO - attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+2024-09-11 19:26:11,409 - INFO - Poison Rate: 560 / 21126 = 2.651%
+2024-09-11 19:26:11,410 - INFO - trigger_pattern: adaptive
+2024-09-11 19:26:11,410 - INFO - ASR: 98.622%
+
+2024-09-11 19:26:28,751 - INFO - Time: 2024-09-11 19:26:28
+2024-09-11 19:26:28,753 - INFO - folder_name: _wav_c125
+2024-09-11 19:26:28,753 - INFO - poison_test_path: ./datasets/temp/test_bit_c125/
+2024-09-11 19:26:28,753 - INFO - attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+2024-09-11 19:26:28,754 - INFO - Poison Rate: 560 / 21126 = 2.651%
+2024-09-11 19:26:28,754 - INFO - trigger_pattern: adaptive
+2024-09-11 19:26:28,755 - INFO - ASR: 98.623%
+
+2024-09-11 19:26:54,942 - INFO - Time: 2024-09-11 19:26:54
+2024-09-11 19:26:54,943 - INFO - folder_name: _wav_c125
+2024-09-11 19:26:54,943 - INFO - poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+2024-09-11 19:26:54,944 - INFO - attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+2024-09-11 19:26:54,944 - INFO - Poison Rate: 560 / 21126 = 2.651%
+2024-09-11 19:26:54,944 - INFO - trigger_pattern: adaptive
+
+2024-09-11 19:26:54,945 - INFO - ASR: 97.391%
+2024-09-11 19:27:12,326 - INFO - Time: 2024-09-11 19:27:12
+2024-09-11 19:27:12,327 - INFO - folder_name: _wav_c125
+2024-09-11 19:27:12,328 - INFO - poison_test_path: ./datasets/temp/test_bit/
+2024-09-11 19:27:12,328 - INFO - attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_4.pth
+2024-09-11 19:27:12,328 - INFO - Poison Rate: 560 / 21126 = 2.651%
+2024-09-11 19:27:12,328 - INFO - trigger_pattern: adaptive
+2024-09-11 19:27:12,328 - INFO - ASR: 98.622%
+2024-09-13 09:41:33,356 - INFO - Time: 2024-09-13 09:41:33
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_wav_c125_cossim/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 90.097%
+
+2024-09-13 09:42:09,102 - INFO - Time: 2024-09-13 09:42:09
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 96.217%
+
+2024-09-13 09:42:36,057 - INFO - Time: 2024-09-13 09:42:36
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 97.326%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-13 12:54:44,003 - INFO - 
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_wav_c125_cossim/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 91.066%
+
+2024-09-13 12:55:09,846 - INFO - 
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 95.043%
+
+2024-09-13 12:55:28,102 - INFO - 
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 95.867%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-13 13:04:01,547 - INFO - 
+model_save_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_wav_c125_cossim/
+Poison Rate: 526 / 21126 = 2.490%trigger_pattern: adaptive
+ACC: 95.201%
+
+2024-09-13 13:04:16,098 - INFO - 
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_wav_c125_cossim/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 75.350%
+
+2024-09-13 13:04:41,839 - INFO - 
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 95.957%
+
+2024-09-13 13:05:01,463 - INFO - 
+folder_name: _wav_c125_cossim
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+Poison Rate: 526 / 21126 = 2.490%
+trigger_pattern: adaptive
+ASR: 95.786%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-13 13:49:58,437 - INFO - 
+model_save_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_bit_c125/
+trigger_pattern: adaptive
+Poison Rate: 623 / 21126 = 2.949%
+ACC: 94.025%
+
+2024-09-13 13:50:16,004 - INFO - 
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_bit_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 623 / 21126 = 2.949%
+ASR: 95.304%
+
+2024-09-13 13:50:41,691 - INFO - 
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 623 / 21126 = 2.949%
+ASR: 94.739%
+
+2024-09-13 13:50:59,031 - INFO - 
+folder_name: _bit_c125
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 623 / 21126 = 2.949%
+ASR: 95.300%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-13 14:03:15,578 - INFO - 
+model_save_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_wav_c125/
+trigger_pattern: adaptive
+Poison Rate: 560 / 21126 = 2.651%
+ACC: 92.165%
+
+2024-09-13 14:03:31,199 - INFO - 
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_wav_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 560 / 21126 = 2.651%
+ASR: 93.539%
+
+2024-09-13 14:03:57,172 - INFO - 
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 560 / 21126 = 2.651%
+ASR: 98.565%
+
+2024-09-13 14:04:13,949 - INFO - 
+folder_name: _wav_c125
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 560 / 21126 = 2.651%
+ASR: 98.379%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-14 04:03:17,703 - INFO - 
+model_save_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+folder_name: _wav_layer4
+poison_test_path: ./datasets/temp/test_bit_c125/
+trigger_pattern: adaptive
+Poison Rate: 586 / 21126 = 2.774%
+ACC: 92.262%
+
+2024-09-14 04:03:34,850 - INFO - 
+folder_name: _wav_layer4
+poison_test_path: ./datasets/temp/test_bit_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 586 / 21126 = 2.774%
+ASR: 96.518%
+
+2024-09-14 04:03:51,850 - INFO - 
+folder_name: _wav_layer4
+poison_test_path: ./datasets/temp/test_bit_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 586 / 21126 = 2.774%
+ASR: 96.518%
+
+2024-09-14 04:04:07,776 - INFO - 
+folder_name: _wav_layer4
+poison_test_path: ./datasets/temp/test_bit_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 586 / 21126 = 2.774%
+ASR: 96.518%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-13 22:16:46,110 - INFO - 
+model_save_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit_c125/
+trigger_pattern: adaptive
+Poison Rate: 654 / 21126 = 3.096%
+ACC: 90.597%
+
+2024-09-13 22:17:03,154 - INFO - 
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit_c125/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 654 / 21126 = 3.096%
+ASR: 98.381%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-14 22:42:50,814 - INFO - 
+model_save_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit_layer4/
+trigger_pattern: adaptive
+Poison Rate: 655 / 21126 = 3.100%
+ACC: 94.025%
+
+2024-09-14 22:43:40,174 - INFO - 
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit_layer4/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 655 / 21126 = 3.100%
+ASR: 99.427%
+
+2024-09-14 22:44:05,521 - INFO - 
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 655 / 21126 = 3.100%
+ASR: 99.087%
+
+2024-09-14 22:44:21,818 - INFO - 
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 655 / 21126 = 3.100%
+ASR: 99.433%
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2024-09-15 18:54:21,396 - INFO - Epoch: 27
+
+2024-09-15 18:54:23,690 - INFO - 
+model_save_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+folder_name: _bit_layer4_predefattloss1
+poison_test_path: ./datasets/temp/test_bit_layer4_predefattloss1/
+trigger_pattern: adaptive
+Poison Rate: 483 / 21126 = 2.286%
+ACC: 91.185%
+
+2024-09-15 18:54:35,449 - INFO - 
+folder_name: _bit_layer4_predefattloss1
+poison_test_path: ./datasets/temp/test_bit_layer4_predefattloss1/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 483 / 21126 = 2.286%
+ASR: 99.133%
+
+2024-09-15 18:55:01,324 - INFO - 
+folder_name: _bit_layer4_predefattloss1
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 483 / 21126 = 2.286%
+ASR: 98.478%
+
+2024-09-15 18:55:18,080 - INFO - 
+folder_name: _bit_layer4_predefattloss1
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_50_batchsize_64_Adam_lr_0.0001_mom_0.9_id_5.pth
+trigger_pattern: adaptive
+Poison Rate: 483 / 21126 = 2.286%
+ASR: 98.947%
+
+****************************************************************************************************
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit_layer4/
+model_save_name: ./models/train/resnet34_posion_left_epochs_200_batchsize_128_Adam_lr_0.02_step_rate0.9_ir_iter_epoch5_mom_0.9_id_6.pth
+poison sample number: 1056
+trigger_pattern: adaptive
+ACC: 2431 / 2567 = 94.702%
+
+Time: 2024-09-27 23:21:31
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit_layer4/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_200_batchsize_128_Adam_lr_0.02_step_rate0.9_ir_iter_epoch5_mom_0.9_id_6.pth
+Poison Rate: 655 / 21126 = 3.100%
+trigger_pattern: adaptive
+ASR: 1727 / 1746 = 98.912%
+Time: 2024-09-27 23:21:59
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_adaptive_epsilon01/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_200_batchsize_128_Adam_lr_0.02_step_rate0.9_ir_iter_epoch5_mom_0.9_id_6.pth
+Poison Rate: 655 / 21126 = 3.100%
+trigger_pattern: adaptive
+ASR: 2254 / 2300 = 98.000%
+Time: 2024-09-27 23:22:16
+folder_name: _bit_layer4
+poison_test_path: ./datasets/temp/test_bit/
+attack_model_name: ./models/train/resnet34_posion_left_epochs_200_batchsize_128_Adam_lr_0.02_step_rate0.9_ir_iter_epoch5_mom_0.9_id_6.pth
+Poison Rate: 655 / 21126 = 3.100%
+trigger_pattern: adaptive
+ASR: 1213 / 1234 = 98.298%
